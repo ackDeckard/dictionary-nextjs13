@@ -4,13 +4,15 @@ import "./globals.css";
 import Header from "./components/Header";
 import { Inter, Lora, Inconsolata } from "next/font/google";
 
-export const metadata = {
-  title: "Dictionary - FrontEnd Mentor ",
-  description: "Created using React + Tailwind + NextJS 13",
-  icons: {
-    icon: "/favicon.ico",
-  },
-};
+// uh. Exporting metadata doesn't work with "use client".
+// export const metadata = {
+//   title: "Dictionary - FrontEnd Mentor ",
+//   description: "Created using React + Tailwind + NextJS 13",
+//   icons: {
+//     icon: "/favicon.ico",
+//   },
+// };
+// Will keep it here for future reference.
 
 const inter = Inter({ subsets: ["latin"] });
 const lora = Lora({ subsets: ["latin"] });
